@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Nilesh">
+        <title>Question 3</title>
+    </head>
+    <body>
+       <div> 
+        <div>
+            <h4> without float </h4>
+            <img src="index.png">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam ab iste minus repellat ex dolor cum enim consequuntur vitae odit, vel facere non odio ad dolorum. Sequi, labore quasi.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam ab iste minus repellat ex dolor cum enim consequuntur vitae odit, vel facere non odio ad dolorum. Sequi, labore quasi.</div>        
+        </div>
+
+        <div style="overflow: hidden">
+            <h4> with float </h4>
+            <img class="floatLeft" src="index.png">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam ab iste minus repellat ex dolor cum enim consequuntur vitae odit, vel facere non odio ad dolorum. Sequi, labore quasi.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam ab iste minus repellat ex dolor cum enim consequuntur vitae odit, vel facere non odio ad dolorum. Sequi, labore quasi.</div>        
+        </div>
+       </div>
+       <div>
+        <div style="overflow: hidden">
+            <h4> without clear </h4>
+            <img class="floatLeft" src="index.png">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam ab iste minus repellat ex dolor cum enim consequuntur vitae odit, vel facere non odio ad dolorum. Sequi, labore quasi.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam ab iste minus repellat ex dolor cum enim consequuntur vitae odit, vel facere non odio ad dolorum. Sequi, labore quasi.</div>        
+        </div>
+
+        <div style="overflow: hidden">
+            <h4> with clear </h4>
+            <img class="floatLeft" src="index.png">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam ab iste minus repellat ex dolor cum enim consequuntur vitae odit, vel facere non odio ad dolorum. Sequi, labore quasi.</div>
+            <div class="clearLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam ab iste minus repellat ex dolor cum enim consequuntur vitae odit, vel facere non odio ad dolorum. Sequi, labore quasi.</div>        
+        </div>
+       </div>
+
+    </body>
+    <style>
+        .floatLeft {
+            float: left;
+        }
+
+        .clearLeft {
+            clear: left;
+        }
+    </style>
+</html>
