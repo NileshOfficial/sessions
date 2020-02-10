@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="author" content="Nilesh">
+        <meta charset="utf-8">
+        <title>Question 12</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="title">to the new</div>
+                <div class="navItems">
+                    <span>Home</span><span>Quick Help</span>
+                </div>
+            </nav>
+        </header>
+        <div class="form">
+            <form>
+                <header class="formHeader">
+                    bug report
+                </header>
+                <section class="formFields">
+                    <p>Title:*</p>
+                    <input class="bottomSpacing" type="text" required>
+                    
+                    <p> Description:* </p>
+                    <textarea class="bottomSpacing" rows=5> </textarea>
+                    
+                    <p>Operating System:</p>
+                    <select class="bottomSpacing formFieldsSelect">
+                        <option value="windows xp" selected>Windows XP</option> 
+                        <option value="mac">Mac OS</option> 
+                        <option value="ubuntu">Ubuntu</option> 
+                        <option value="redhat">Red Hat</option> 
+                    </select>
+                    
+                    <p>Product:*</p>
+                    <select class="bottomSpacing">
+                        <option value="formoid" selected>formoid</option> 
+                        <option value="formoid">formoid</option> 
+                        <option value="formoid">formoid</option> 
+                        <option value="formoid">formoid</option> 
+                    </select>
+                    
+                    <p>Version:*</p>
+                    <input class="bottomSpacing" type=text style="width: 20%">
+
+                    <p>Licence:*</p>
+                    <div class="radioSelect bottomSpacing">
+                        <span><input type="radio" name="licence" value="Free">&nbsp;&nbsp;Free</span>
+                        <span><input type="radio" name="licence" value="Business">&nbsp;&nbsp;Business</span>
+                        <span></span>
+                        <!-- <div class="radioSelect"><input type="radio" name="licence" value="Free">&nbsp;Free</div>
+                        <div class="radioSelect"><input type="radio" name="licence" value="Business">&nbsp;Business</div> -->
+                    </div>
+
+                    <p>Severity:</p>
+                    <select class="bottomSpacing">
+                        <option value="critical" selected>Critical</option> 
+                        <option value="mild">Mild</option> 
+                        <option value="not important">Not Important</option>  
+                    </select>
+                    
+                    <p>Attachments:</p>
+                    <input class="bottomSpacing" type="file">
+                </section>
+                <footer class="formFooter">
+                    <input type="submit" value="Submit">
+                </footer>
+            </form>
+        </div>
+    </body>
+</html>
