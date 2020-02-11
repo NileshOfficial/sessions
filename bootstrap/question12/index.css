@@ -1,0 +1,101 @@
+* {
+    font-family: sans-serif;
+}
+
+header .navbar {
+    background-color: white;
+    border-radius: 0;
+}
+
+.navbar .navbar-header .navbar-brand {
+    color: #1e9697;
+} 
+
+.navbar .nav li a {
+    color: #1e9697;
+}
+
+#form {
+    padding: 0 15% 0 15%;
+    margin-bottom: 40px;
+}
+
+.container-fluid form{
+    border-radius: 5px;
+    border: 2px solid #bcc3ca;
+}
+
+.container-fluid form section {
+    padding: 0 5% 0 5%;
+}
+
+.container-fluid form header {
+    background-color: #bcc3ca;
+    text-transform: capitalize;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0;
+}
+
+.container-fluid form footer {
+    background-color: #edeff1;
+    color: white;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+.container-fluid form .well {
+    padding: 3% 5% 3% 5%;
+}
+
+.container-fluid footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-fluid form footer input[type=submit] {
+    background-color: #1e9697;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    padding: 5px;
+}
+
+.form-group label{
+    font-size: 14px;
+    color: #686868;
+    font-weight: 300;
+}
+
+.form-group select {
+    background-color: #1abc9c;
+}
+
+.form-group input[type="file"] {
+    display: none;
+}
+
+.form-group .fileUpload {
+    border: 2px solid #bcc3ca;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.form-group .fileUpload .filename {
+    padding: 5px;
+    flex-grow: 3;
+    color: #787a7c;
+}
+
+.form-group .fileUpload .chooseFileButton {
+    background-color: #bcc3ca;
+    padding: 5px;
+    color: white;
+}
+
