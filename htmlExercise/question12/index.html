@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-    <head>
-        <meta name="author" content="Nilesh">
-        <meta charset="utf-8">
-        <title>Question 12</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
+
+<head>
+    <meta name="author" content="Nilesh">
+    <meta charset="utf-8">
+    <title>Question 12</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
         <header>
             <nav class="navbar">
                 <div class="title">to the new</div>
@@ -22,26 +25,26 @@
                 <section class="formFields">
                     <p>Title:*</p>
                     <input class="bottomSpacing" type="text" required>
-                    
+
                     <p> Description:* </p>
                     <textarea class="bottomSpacing" rows=5> </textarea>
-                    
+
                     <p>Operating System:</p>
                     <select class="bottomSpacing formFieldsSelect">
-                        <option value="windows xp" selected>Windows XP</option> 
-                        <option value="mac">Mac OS</option> 
-                        <option value="ubuntu">Ubuntu</option> 
-                        <option value="redhat">Red Hat</option> 
+                        <option value="windows xp" selected>Windows XP</option>
+                        <option value="mac">Mac OS</option>
+                        <option value="ubuntu">Ubuntu</option>
+                        <option value="redhat">Red Hat</option>
                     </select>
-                    
+
                     <p>Product:*</p>
                     <select class="bottomSpacing">
-                        <option value="formoid" selected>formoid</option> 
-                        <option value="formoid">formoid</option> 
-                        <option value="formoid">formoid</option> 
-                        <option value="formoid">formoid</option> 
+                        <option value="formoid" selected>formoid</option>
+                        <option value="formoid">formoid</option>
+                        <option value="formoid">formoid</option>
+                        <option value="formoid">formoid</option>
                     </select>
-                    
+
                     <p>Version:*</p>
                     <input class="bottomSpacing" type=text style="width: 20%">
 
@@ -56,18 +59,34 @@
 
                     <p>Severity:</p>
                     <select class="bottomSpacing">
-                        <option value="critical" selected>Critical</option> 
-                        <option value="mild">Mild</option> 
-                        <option value="not important">Not Important</option>  
+                        <option value="critical" selected>Critical</option>
+                        <option value="mild">Mild</option>
+                        <option value="not important">Not Important</option>
                     </select>
-                    
+
                     <p>Attachments:</p>
-                    <input class="bottomSpacing" type="file">
+                    <label for="fileUpload" class="fileUpload">
+                        <div id="fileName" class="filename">No File Selected</div>
+                        <div class="chooseFileButton">Choose File</div>
+                    </label>
+                    <input id="fileUpload" type="file" onchange="displayFileName()" />
                 </section>
                 <footer class="formFooter">
                     <input type="submit" value="Submit">
                 </footer>
             </form>
         </div>
-    </body>
+    </main>
+</body>
+
+<script>
+    let fileChooser = document.getElementById("fileUpload");
+
+    function displayFileName() {
+        let fileDisplay = document.getElementById("fileName");
+        let filename = fileChooser.value.split("\\");
+        fileDisplay.innerHTML = filename[filename.length - 1];
+    }
+</script>
+
 </html>
