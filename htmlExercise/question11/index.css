@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body {
+main {
     margin: 0;
     padding-left: 5%;
     padding-right: 5%;
@@ -14,6 +14,11 @@ header {
     padding: 1% 10% 1% 10%;
     background-color: #323232;
     color: #bdbab5;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+header h1 {
     font-size: 24px;
     font-weight: 400;
 }
