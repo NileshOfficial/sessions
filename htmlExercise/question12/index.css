@@ -53,13 +53,14 @@ body {
 }
 
 .formFields {
-    padding: 4% 4% 4% 4%;
+    padding: 15px;
 }
 
 .formFields input[type=text] {
     width: 100%;
     border: 2px solid #bcc3ca;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 4px;
 }
 
@@ -73,7 +74,8 @@ body {
     width: 100%;
     border: 2px solid #bcc3ca;
     border-radius: 4px;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .formFields select {
