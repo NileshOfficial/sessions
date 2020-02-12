@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nilesh">
+    <script src="./question.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>Question 1: Prompt for amount, interest rate and no. of years and calculate simple interest.</h3>
+        <label for="principle">Principal Amount</label>
+        <input id="principal" type="number">
+        <br />
+        <label for="rate">Rate of Interest</label>
+        <input id="rate" type="number">
+        <br />
+        <label for="time">Time in years</label>
+        <input id="time" type="number">
+        <br>
+        <button onclick="calculate()">Calculate Interest</button>
+        <br />
+        <label id="interest">Interest: </label>
+    </div> <br /> <br />
+    <div>
+        <h3>Question 2: is palindrome string</h3>
+        <input id="palindromeString" type="text">
+        <button onclick="checkPalindrome()">Check</button>
+        <label id="palindromeResult"></label>
+    </div> <br /> <br />
+    <div>
+        <h3>Question 3: Area of circle</h3>
+        <input id="radius" type="number">
+        <button onclick="areaCircle()">Calculate Area</button>
+        <br />
+        <label id="area"></label>
+    </div> <br /> <br />
+    <div>
+        <h3>
+            Question 4: Copy information of one object to another and log it to console.
+        </h3>
+        <button id="copy" onclick="objectCopy()">Create copy</button><br/>
+        <label id="instruction"></label>
+    </div> <br /> <br />
+    <div>
+        <h3>
+            Question 5: create a list of objects of Employee with info as follows :
+            Name, age, salary ,DOB
+        </h3>
+            <pre id="jsonData"></pre>
+            <p id="employees"></p> 
+                <ul>
+                    <li>filter all employees with salary greater than 5000
+                        <pre id="empQ1"></pre>
+                    </li>
+                    <li>group employee on the basis of their age
+                        <pre id="empQ2"></pre>
+                    </li>
+                    <li>fetch employees with salary less than 1000 and age greater than 20. Then give them an increment 5 times their salary
+                        <pre id="empQ3"></pre>
+                    </li>
+            </ul>
+        <button id="getEmpDetail" onclick="employeeQuestion()">Get employee details</button><br/>
+    </div>
+</body>
+
+<style>
+    input[type=number] {
+        padding: 7px;
+        padding-right: 2px;
+    }
+
+    input[type=text] {
+        padding: 7px;
+    }
+</style>
+
+</html>
