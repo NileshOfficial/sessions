@@ -1,10 +1,17 @@
+
 function calculate() {
-    let principal = document.getElementById("principal");
-    let rate = document.getElementById("rate");
-    let time = document.getElementById("time");
+    let principal = parseFloat( document.getElementById("principal").value );
+    let rate = parseFloat( document.getElementById("rate").value );
+    let time = parseFloat( document.getElementById("time").value );
     let interest = document.getElementById("interest");
 
-    interest.innerHTML = `Interest: ${(principal.value * rate.value * time.value) / 100}`;
+    if ( !isNaN(principal) && !isNaN(rate) && !isNaN(time))
+        if( principal > 0 && rate > 0 && time > 0)
+            interest.innerHTML = `Interest: ${(principal * rate * time) / 100}`;
+        else
+            interest.innerHTML = "Enter positive non-zero values";
+    else
+        interest.innerHTML = "Enter number values";
 }
 
 function checkPalindrome() {
@@ -25,9 +32,15 @@ function checkPalindrome() {
 }
 
 function areaCircle() {
-    let r = document.getElementById("radius").value;
+    let r = parseFloat( document.getElementById("radius").value );
     let area = document.getElementById("area");
-    area.innerHTML = 3.14 * r * r;
+    if( !isNaN(r) )
+        if( r > 0)
+            area.innerHTML = Math.PI * r * r;
+        else
+            area.innerHTML = "enter positive non-zero value";
+    else
+        area.innerHTML = "enter number value";
 }
 
 function objectCopy() {
@@ -41,11 +54,11 @@ function objectCopy() {
     };
 
     let copy = {
-        ... originalObject
+        ...originalObject
     }
     console.log('Original object');
     console.log(originalObject);
-    console.log('Copied object'); 
+    console.log('Copied object');
     console.log(copy);
     instruction.innerHTML = 'Please check console.'
 }
@@ -186,7 +199,7 @@ function groupByAge() {
     let groupedData = {};
 
     employeeDetails.forEach(emp => {
-        if(groupedData[emp.age] === undefined)
+        if (groupedData[emp.age] === undefined)
             groupedData[emp.age] = [emp];
         else groupedData[emp.age].push(emp);
     });
@@ -198,7 +211,7 @@ function incEmpSalary() {
     let empQ3 = document.getElementById("empQ3");
     let empIdx = [];
     employeeDetails.forEach((emp, idx) => {
-        if(emp.salary < 1000 && emp.age > 20)
+        if (emp.salary < 1000 && emp.age > 20)
             empIdx.push(idx);
     });
 
