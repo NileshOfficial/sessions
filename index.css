@@ -18,31 +18,39 @@ h2 {
 
 .background {
     background: url("./10x-featured-social-media-image-size.png");
-    background-size: cover;
+    background-repeat: no-repeat;
     width: 600px;
     height: 500px;
 }
 
 .pseudoClass ul li{
-    list-style: none;
     font: normal 300 20px Arial, Helvetica, sans-serif;
 }
 
-.pseudoClass ul li:hover {
-    list-style: square;
-    color: green;
+.pseudoClass ul :last-child {
+    font-weight: 800;
+}
+
+.pseudoClass ul :before {
+    content: "*";
+    margin: 40px;
+}
+
+.pseudoClass ul :after {
+    content: "*";
+    margin: 40px;
 }
 
 .combinators h2 {
     color: grey;
 }
 
-.combinators p{
-    font: normal 16px Arial, Helvetica, sans-serif;
+.combinators > p{
+    font: normal 20px Arial, Helvetica, sans-serif;
 }
 
-.combinators :last-child{
-    color: #6bc900;
+.combinators-last :last-child {
+    color: green;
 }
 
 .attrSelect input[type="text"] {
@@ -52,5 +60,5 @@ h2 {
 }
 
 .attrSelect input[type="text"]:hover {
-    border: 2px solid #46bdb3;
+    border: 2px solid #5151a0;
 }
