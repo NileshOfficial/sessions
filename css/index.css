@@ -129,6 +129,7 @@ body {
 .phone {
     width: 185px;
     text-transform: none;
+    margin-top: 12px;
 }
 
 .phone i {
@@ -146,6 +147,7 @@ body {
     width: 150px;
     text-transform: capitalize;
     margin-left: 30px;
+    margin-top: 12px;
 }
 
 .location i {
@@ -163,6 +165,13 @@ body {
     display: inline-block;
     text-transform: uppercase;
     margin-left: 30px;
+    margin-top: 5px;
+    transition: ease-in-out 0.2s;
+}
+
+.contact > a:hover {
+    background: #79b530;
+    color: #fff;
 }
 
 /* navbar */
@@ -225,26 +234,79 @@ body {
 
 .contentText p {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.contentText span {
+.contentText .btnGrp {
     text-align: center;
 }
 
-.contentText span a {
+.contentText .btnGrp a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
 }
 
-.contentText span a:first-child {
+.contentText .btnGrp a:first-child {
     border-color: #79b530;
     margin-right: 10px;
+    transition: ease-in-out 0.2s;
 }
 
-.contentText span a:last-child {
+.contentText .btnGrp a:first-child:hover {
+    background-color: #fff;
+    color: #79b530;
+    border-color: #fff;
+}
+
+.contentText .btnGrp a:last-child {
     border: 2px solid white;
     margin-left: 10px;
+    transition: ease-in-out 0.2s;
+}
 
+.contentText .btnGrp a:last-child:hover {
+    background: #fff;
+    color: #747474;
+}
+
+.content .container {
+    position: relative;
+    top: 90%;
+}
+
+.content .container .feature {
+    float: left;
+    width: calc(100%/4);
+    text-align: center;
+    padding: 30px;
+}
+
+.content .container .feature:nth-child(1) {
+    background: #4886ff; 
+}
+
+.content .container .feature:nth-child(2) {
+    background: #ff6f6f
+}
+
+.content .container .feature:nth-child(3) {
+    background: #b5d56a;
+}
+
+.content .container .feature:nth-child(4) {
+    background: #fa8147;
+}
+
+.content .container .feature i {
+    display: block;
+    font-size: 28px;
+    border-color: white;
+    margin-bottom: 20px;
+}
+
+.content .container .feature h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
