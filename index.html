@@ -1,37 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Nilesh">
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet"> 
     <title>Facebook</title>
 </head>
+
 <body>
     <main>
         <header class="bgPrimary">
-            <nav class="navbar container sectionPadding">
+            <nav class="navbar clearfix container sectionPadding">
                 <h1 class="logo left">facebook</h1>
                 <form class="login right">
-                    <div >
-                        <label for="">Email or phone</label>
-                        <input type="text">
+                    <div>
+                        <label for="email-phone-login">Email or phone</label>
+                        <input id="email-phone" type="text">
                     </div>
-                    <div >
-                        <label for="">Password</label>
-                        <input type="password">
+                    <div>
+                        <label for="password-login">Password</label>
+                        <input id="password-login" type="password">
                         <a href="#">Forgotten account?</a>
                     </div>
                     <input type="submit" value="Log In">
                 </form>
             </nav>
         </header>
-        <section>
-            <div class="container section">
-                <div class="banner"></div>
-                <div class="signup"></div>
+        <section class="gradientBg content clearfix">
+            <div class="container sectionPadding">
+                <div class="banner left">
+                    <span>Facebook helps you connect and share with the people in your life.</span>
+                    <img src="peopleNet.png" alt="">
+                </div>
+                <div class="signup right">
+                    <form>
+                        <div class="signupHeader">
+                            <h2>Create an account</h2>
+                            <span>It's quick and easy.</span>
+                        </div>
+                        <div class="name">
+                            <input class="signupInputs" type="text" id="firstname" placeholder="First name">
+                            <input class="signupInputs" type="text" id="lastname" placeholder="Surname">
+                        </div>
+                        <input class="signupInputs" type="text" placeholder="Mobile number or email address">
+                        <input class="signupInputs" type="password" placeholder="New password">
+                        <div class="birthdate clearfix">
+                            <label>Birthday</label>
+                            <span>
+                                <select name="day" id="day">
+                                    <option value="Day">Day</option>
+                                </select>
+                                <select name="month" id="month">
+                                    <option value="Month">Month</option>
+                                </select>
+                                <select name="year" id="year">
+                                    <option value="Year">Year</option>
+                                </select>
+                                <a class="moreInfo" href="#">?</a>
+                            </span>
+                        </div>
+                        <div class="gender">
+                            <label>Gender</label>
+                            <span class="radioGrp clearfix">
+                                <span>
+                                    <input type="radio" name="" id="">
+                                    <label>Female</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="" id="">
+                                    <label>Male</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="" id="">
+                                    <label>Custom</label>
+                                </span>
+                                <a class="moreInfo" href="#">?</a>
+                            </span>
+                        </div>
+                        <p class="policy">
+                            By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and
+                            <a href="#">Cookie Policy</a>. You may receive
+                            SMS notifications from us and can opt out at any time.
+                        </p>
+                        <input type="submit" value="Sign Up">
+                    </form>
+                    <span>
+                        <a href="#">Create a Page</a> for a celebrity, band or business.
+                    </span>
+                </div>
             </div>
         </section>
+        <footer>
+            <div class="container sectionPadding">
+                <div class="languages">
+                    <a>English (UK)</a>
+                    <a>हिन्दी</a>
+                    <a>ਪੰਜਾਬੀ</a>
+                    <a>اردو</a>
+                    <a>தமிழ்</a>
+                    <a>বাংলা</a>
+                    <a>मराठी</a>
+                    <a>తెలుగు</a>
+                    <a>ગુજરાતી</a>
+                    <a>ಕನ್ನಡ</a>
+                    <a>മലയാളം</a>
+                    <span>
+                        <a>+</a>
+                    </span>
+                </div>
+                <div class="links">
+                    <a href="#">Sign Up</a>
+                    <a href="#">Log In</a>
+                    <a href="#">Messenger</a>
+                    <a href="#">Facebook Lite</a>
+                    <a href="#">Watch</a>
+                    <a href="#">People</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Page categories</a>
+                    <a href="#">Places</a>
+                    <a href="#">Games</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Marketplace</a>
+                    <a href="#">Groups</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Local</a>
+                    <a href="#">Fundraisers</a>
+                    <a href="#">Services</a>
+                    <a href="#">About</a>
+                    <a href="#">Create ad</a>
+                    <a href="#">Create Page</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">AdChoices</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Help</a>
+                </div>
+                <span>
+                    Facebook © 2020
+                </span>
+            </div>
+        </footer>
     </main>
 </body>
+<script>
+    let dayOpt = document.getElementById("day");
+    let monthOpt = document.getElementById("month");
+    let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+    let yearOpt = document.getElementById("year");
+
+    for (let day = 1; day < 32; day++)
+        dayOpt.innerHTML += `<option value="${day}">${day}</option>`;
+
+    for (let month = 0; month < months.length; month++)
+        monthOpt.innerHTML += `<option value="${months[month]}">${months[month]}</option>`;
+
+    for (year = 1901; year < 2021; year++)
+        yearOpt.innerHTML += `<option value="${year}">${year}</option>`;
+</script>
+
 </html>

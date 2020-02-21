@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 /*utilities*/
@@ -21,7 +21,6 @@ body {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    overflow: auto;
 }
 
 .bgPrimary {
@@ -32,10 +31,16 @@ body {
     padding: 0 40px;
 }
 
+.clearfix, .clearfix::after, .clearfix::before {
+    content: '';
+    clear: both;
+    display: block;
+}
+
 /*navbar*/
 
-main > header {
-    padding: 10px;
+main>header {
+    padding: 15px 0 10px 0;
 }
 
 .navbar .logo {
@@ -52,7 +57,7 @@ main > header {
 }
 
 .navbar form>div:first-child {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .navbar .login div label, .navbar .login div input, .navbar .login div a {
@@ -93,10 +98,242 @@ main > header {
 
 /* signup and banner */
 
+.gradientBg {
+    background: linear-gradient(#fff, #d6daea);
+}
+
+.content {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 .banner {
-    width: 60%;
+    width: 50%;
 }
 
 .signup {
-    width: 40%;
+    width: 45%;
+}
+
+.banner span {
+    display: inline-block;
+    color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.banner img {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.signup form .signupHeader h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.signup form .signupHeader span {
+    color: #1d2129;
+    font-size: 19px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.signupInputs {
+    color: #1c1e21;
+    font-size: 18px;
+    border: 1px solid #ccd0d5;
+    padding: 8px 10px;
+    border-color: #bdc7d8;
+    border-radius: 5px;
+}
+
+.signup form .name input[type="text"] {
+    margin: 0 10px 10px 0;
+    float: left;
+    width: calc(100%/2 - 10px/2);
+}
+
+.signup form .name input[type="text"]:last-child {
+    margin-right: 0;
+}
+
+.signup form>input[type="text"], .signup form>input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.signup form .birthdate>label, .signup form .gender>label {
+    margin: 10px 0 5px 0;
+    color: #90949c;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+.radioGrp span {
+    width: calc(100%/4);
+    float: left;
+}
+
+.radioGrp span:last-child {
+    margin-right: 0;
+}
+
+.signup form .birthdate select {
+    float: left;
+    font-size: 13px;
+    height: 30px;
+    padding: 5px;
+    background-color: #fff;
+    color: #1c1e21;
+    border: 1px solid #ccd0d5;
+}
+
+.moreInfo {
+    display: inline-block;
+    font-size: 14px;
+    color: #d3d3d3;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    background:#606770;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.gender .moreInfo {
+    margin-top: -5px;
+}
+
+.policy {
+    color: #777;
+    font-size: 11px;
+    margin: 11px 0;
+    width: 316px;
+}
+
+.policy a {
+    text-decoration: none;
+    color: #385898;
+}
+
+.signup form input[type="submit"] {
+    font-size: 19px;
+    background: linear-gradient(#79bc64, #578843);
+    margin: 10px 0;
+    min-width: 194px;
+    padding: 7px 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+.signup>span {
+    display: inline-block;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.signup>span a {
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.signup>span a:hover {
+    text-decoration: underline;
+}
+
+main footer {
+    padding: 40px;
+}
+
+main footer .languages a {
+    font-size: 12px;
+    color: #385898;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main footer .languages a:hover {
+    text-decoration: underline;
+}
+
+main footer .languages span {
+    display: inline-block;
+    border: 1px solid #b3c1d3;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #ebedf0;
+    padding: 0 10px;
+}
+
+main footer .languages span a {
+    display: inline-block;
+    color: #606770;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+main footer .languages span:hover, main footer .languages span a:hover {
+    text-decoration: none;
+    background-color: #e0e0e0;
+}
+
+main footer .languages {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c1cddd;
+}
+
+main footer .links {
+    padding-top: 10px;
+}
+
+main footer .links a {
+    display: inline-block;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #385898;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+main footer .links a:first-child, main footer .links a:nth-child(15) {
+    padding-left: 0;
+}
+
+main footer .links a:hover {
+    text-decoration: underline;
+}
+
+main footer .container>span {
+    display: inline-block;
+    font-size: 11px;
+    color: #737373;
+    margin-top: 20px;
 }
