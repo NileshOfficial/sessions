@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*utilities*/
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.bgPrimary {
+    background: #3f5c9a;
+}
+
+.sectionPadding {
+    padding: 0 40px;
+}
+
+/*navbar*/
+
+main > header {
+    padding: 10px;
+}
+
+.navbar .logo {
+    font-size: 42px;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.navbar form>div, .navbar form>input[type="submit"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.navbar form>div:first-child {
+    margin-bottom: 15px;
+}
+
+.navbar .login div label, .navbar .login div input, .navbar .login div a {
+    display: block;
+    font-size: 12px;
+    color: #fff;
+}
+
+.navbar .login div input[type="text"], .navbar .login div input[type="password"] {
+    padding: 3px;
+    color: #000;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+.navbar .login div label {
+    margin-bottom: 5px;
+}
+
+.navbar .login div a {
+    color: #9cb4d8;
+    text-decoration: none;
+}
+
+.navbar .login input[type="submit"] {
+    background-color: #4267b2;
+    border: 1px solid #ccd0d5;
+    border-color: #29487d;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    text-align: center;
+    color: #fff;
+}
+
+/* signup and banner */
+
+.banner {
+    width: 60%;
+}
+
+.signup {
+    width: 40%;
+}
