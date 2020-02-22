@@ -256,13 +256,13 @@ main {
     height: auto;
 }
 
-.stakeholders header {
+.stakeholders > div {
     padding: 15px 15px 7px;
     border-bottom: 1px solid #e7eaec;
     color: #676a6c;
 }
 
-.stakeholders header h5 {
+.stakeholders > div h5 {
     font-size: 14px;
     color: #676a6c;
     margin-bottom: 7px;
@@ -310,19 +310,19 @@ main {
     background-color: #2f4050;
 }
 
-.navContainer nav header {
+.navContainer nav > div{
     background-color: #283a4c;
     padding: 30px 20px;
 }
 
-.navContainer nav header img {
+.navContainer nav > div img {
     width: 48px;
     height: 48px;
     border-radius: 50%;
     margin-bottom: 5px;
 }
 
-.navContainer nav header p {
+.navContainer nav > div p {
     color:#DFE4ED;
     font-weight: 600;
     font-size: 13px;
