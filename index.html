@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nilesh">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Responsive Layout</title>
+</head>
+
+<body>
+    <main>
+        <aside id="crunchedNav" class="crunchedNav">
+            <div>
+                <a id="close" class="close" href="#" onclick="hideCrunchedNav()">
+                    <i class="fas fa-times"></i>
+                </a>
+                <ul class="navlinks">
+                    <li>
+                        <a href="#">home</a>
+                    </li>
+                    <li>
+                        <a href="#">generic</a>
+                    </li>
+                    <li>
+                        <a href="#">elements</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <header>
+            <div class="overlay"></div>
+            <nav class="navbar clearfix">
+                <div class="logo left">responsive layout</div>
+                <div class="navlinks right">
+                    <a href="#" class="navlink left">home</a>
+                    <a href="#" class="navlink left">generic</a>
+                    <a href="#" class="navlink left">elements</a>
+                    <a href="#" class="navlink left" onclick="displayCrunchedNav()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+            <section class="welcome">
+                <h1>welcome</h1>
+                <div class="options clearfix">
+                    <div class="option">
+                        <i class="fas fa-taxi primaryColor"></i>
+                        <h4>travel</h4>
+                        <span>Choose a Ride</span>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-camera primaryColor"></i>
+                        <h4>travel</h4>
+                        <span>Choose Photos</span>
+                    </div>
+                </div>
+                <a class="btn primaryColor" href="#">get started</a>
+            </section>
+        </header>
+        <section class="features clearfix">
+            <div class="feature">
+                <img src="https://source.unsplash.com/250x250/?phone" alt="img">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident dignissimos vitae
+                    quidem rem enim, fugit eligendi voluptatem eius quibusdam deleniti voluptate similique ipsam
+                    expedita alias nostrum laboriosam adipisci. Autem!</p>
+                <a class="btn primaryColor" href="#">learn more</a>
+            </div>
+            <div class="feature">
+                <img src="https://source.unsplash.com/250x250/?camera" alt="img">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, laudantium facilis. Aut, officiis,
+                    quisquam et hic iusto a placeat, quaerat debitis expedita iste ipsa. Consectetur quasi praesentium
+                    suscipit ipsum ad.</p>
+                <a class="btn primaryColor" href="#">learn more</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    let crunchedNav = document.getElementById("crunchedNav")
+
+    function displayCrunchedNav() {
+        crunchedNav.style.display = "block";
+    }
+
+    function hideCrunchedNav() {
+        crunchedNav.style.display= "none";
+    }
+</script>
+
+</html>
