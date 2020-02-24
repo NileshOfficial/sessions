@@ -291,6 +291,7 @@ body {
     width: calc(100%/4);
     text-align: center;
     padding: 30px;
+    margin-bottom: 20px;
 }
 
 .content .container .feature:nth-child(1) {
