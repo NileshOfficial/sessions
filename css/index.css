@@ -8,6 +8,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*utils*/
 
 .clearfix, .clearfix::after, .clearfix::before {
@@ -34,7 +38,6 @@ body {
 }
 
 .btn {
-    text-decoration: none;
     cursor: pointer;
     color: #fff;
     border: 2px solid white;
@@ -44,7 +47,6 @@ body {
 }
 
 .btnPrimary {
-    text-decoration: none;
     cursor: pointer;
     border: 2px solid #79b530;
     color: #79b530;
@@ -71,7 +73,6 @@ body {
 .outlinks span a {
     font-size: 12px;
     color: #747474;
-    text-decoration: none;
     text-transform: uppercase;
     margin: 0 5px;
 }
@@ -84,13 +85,21 @@ body {
     text-decoration: underline;
 }
 
-.outlinks i {
-    font-size: 14px;
+.outlinks .social {
     cursor: pointer;
     margin: 0 10px;
 }
 
-.outlinks i:last-child {
+.outlinks .social a {
+    font-size: 14px;
+    color: #79b530;
+}
+
+.outlinks .social a:hover {
+    text-decoration: none;
+}
+
+.social:last-child {
     margin-right: 0;
 }
 
@@ -201,7 +210,6 @@ body {
 }
 
 .navbar ul li a {
-    text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
@@ -228,21 +236,20 @@ body {
 }
 
 .contentText {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .contentText h1 {
     font-size: 48px;
-    text-align: center;
     margin-bottom: 20px;
 }
 
 .contentText p {
-    text-align: center;
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
@@ -253,7 +260,6 @@ body {
 
 .contentText .btnGrp a {
     display: inline-block;
-    text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
 }
@@ -281,12 +287,16 @@ body {
     color: #747474;
 }
 
-.content .container {
-    position: relative;
-    bottom: -45%;
+footer {
+    color: #fff;
 }
 
-.content .container .feature {
+footer.container {
+    position: relative;
+    margin-top: -100px;
+}
+
+footer .feature {
     float: left;
     width: calc(100%/4);
     text-align: center;
@@ -294,30 +304,30 @@ body {
     margin-bottom: 20px;
 }
 
-.content .container .feature:nth-child(1) {
+footer .feature:nth-child(1) {
     background: #4886ff; 
 }
 
-.content .container .feature:nth-child(2) {
+footer .feature:nth-child(2) {
     background: #ff6f6f
 }
 
-.content .container .feature:nth-child(3) {
+footer .feature:nth-child(3) {
     background: #b5d56a;
 }
 
-.content .container .feature:nth-child(4) {
+footer .feature:nth-child(4) {
     background: #fa8147;
 }
 
-.content .container .feature i {
+footer .feature i {
     display: block;
     font-size: 28px;
     border-color: white;
     margin-bottom: 20px;
 }
 
-.content .container .feature h3 {
+footer .feature h3 {
     text-transform: capitalize;
     font-size: 20px;
     margin-bottom: 20px;
