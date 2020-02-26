@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* utils */
+.primaryText {
+    color: #93cb52 !important;
+}
+
+.btn {
+    padding: 1.2rem;
+    background: inherit;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.headingRegular {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: inherit;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.navbar .logo {
+    margin-bottom: 0;
+}
+
+.navbar .navlinks {
+    display: flex;
+}
+
+.navlink {
+    margin-right: 0.5rem;
+    text-transform: capitalize;
+    transition: ease-in-out 0.2s;
+}
+
+.navlink:last-child {
+    margin-right: 0;
+}
+
+.navlink:hover {
+    background: #93cb52;
+}
+
+/* header */
+.header {
+    min-height: 600px;
+    background: url("./images/showcase.jpg") center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    text-align: center;
+}
+
+.header h2 {
+    font-size: 7.2rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.header p {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.header .btn {
+    background: #93cb52;
+    font-size: 1.8rem;
+}
+
+.header .btn:hover {
+    background: #80b149;
+}
+
+.whatWeDo {
+    background: #f4f4f4;
+    color: #333;
+    padding: 2rem;
+}
+
+.items {
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: space-around;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 5rem;
+}
+
+.items .item:last-child {
+    margin-right: 0;
+}
+
+.item .text {
+    margin-left: 2rem;
+    text-align: justify;
+}
+
+.item h4 {
+    font-size: 1.8rem;
+}
+
+/* .item p {
+    font-size: 1.2rem;
+} */
+
+.itemIcon {
+    background: #93cb52;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 4rem;
+    font-size: 3rem;
+}
+
+.whoWeAre {
+    display: flex;
+}
+
+.whoWeAre .left {
+    flex-basis: 50%;
+    background: url("./images/people.jpg") center center/cover;
+}
+
+.whoWeAre .right {
+    flex-basis: 50%;
+    padding: 2rem;
+    background: #333;
+    color: #fff
+}
+
+.whoWeAre .right .headingRegular {
+    text-align: left;
+}
+
+.whoWeAre .right p {
+    margin-bottom: 1.5rem;
+}
+
+.whoWeAre .right h4{
+    font-size: 1.8rem;
+}
+
+.whoWeAre .right ul {
+    margin-top: 1.5rem;
+}
+
+.whoWeAre .right li{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+}
+
+.clients {
+    padding: 2rem;   
+}
+
+.clientList ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.clientList img {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.contactUs {
+    display: flex;
+    color: #fff;
+}
+
+.contactUs .form {
+    flex-basis: 50%;
+    padding: 2rem;
+    background: #93cb52;
+}
+
+.contactUs .form h3 {
+    text-align: left;
+}
+
+.contactUs .form .instruction {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.contactUs .form form {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+
+.formInputGrp, .formTextArea {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.formInputGrp label, .formTextArea label {
+    width: 100%;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.formInputGrp input {
+    border: 2px solid #93cb52;
+    padding: 1rem;
+    width: 100%;
+    transition: ease-in-out 0.2s;
+}
+
+.formInputGrp input:focus {
+    border: 2px solid #4444ff;
+}
+
+.formTextArea textArea {
+    border: none;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    border: 2px solid #93cb52;
+    transition: ease-in-out 0.2s;
+}
+
+.formTextArea textArea:focus {
+    border: 2px solid #4444ff;
+}
+
+.submitBtn {
+    background-color: #333333;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.submitBtn:hover {
+    background: #7ab436;
+}
+
+.contactUs .map {
+    flex-basis: 50%;
+    background: url("https://source.unsplash.com/600x600/?map") center center/cover;
+}
+
+.footer {
+    background: #333;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    vertical-align: center;
+}
+
+/* responsive */
+@media (max-width: 500px) {
+
+    .items {
+        flex-direction: column;
+    }
+
+    .item {
+        margin-right: 0;
+    }
+
+    .header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .logo {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .navbar .navlinks {
+        margin-bottom: 1rem;
+    }
+
+    .whoWeAre .left {
+        display: none;
+    }
+
+    .whoWeAre .right {
+        flex-basis: 100%;
+    }
+
+    .clientList img {
+        display: inline-block;
+        height: 88px;
+        width: 88px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .clientList ul li:last-child {
+        display: none;
+    }
+
+    .contactUs .form {
+        flex-basis: 100%;
+    }
+
+    .contactUs .map {
+        display: none;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .items {
+        flex-direction: column;
+    }
+
+    .item {
+        margin-right: 0;
+    }
+    
+    .header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .clientList ul li:last-child {
+        display: block;
+    }
+
+    .contactUs .form {
+        flex-basis: 50%;
+    }
+
+    .contactUs .map {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1099px) {
+    .item {
+        flex-direction: column;
+        margin-right: 2.5rem;
+    }
+
+    .itemIcon {
+        margin-bottom: 1rem;
+    }
+
+    .item h4 {
+        text-align: center;
+    }
+
+    .item .text {
+        text-align: center;
+    }
+
+    .contactUs .form {
+        flex-basis: 50%;
+    }
+
+    .contactUs .map {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .contactUs .form {
+        flex-basis: 30%;
+    }
+
+    .contactUs .map {
+        flex-basis: 70%;
+    }
+}
