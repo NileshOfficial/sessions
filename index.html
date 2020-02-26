@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="scripts/index.js"></script>
+    <title>Flexbox Design</title>
+</head>
+
+<body>
+    <aside id="sideNav" class="sideNav">
+        <div class="content">
+            <button class="close" onclick="closeSideNav()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h4>
+                Language
+                <i class="fas fa-plus"></i>
+                <ul id="sideNavLanguages" class="languages">
+                    <li onclick="changeLanguage('English')">english</li>
+                    <li onclick="changeLanguage('Hindi')">hindi</li>
+                    <li onclick="changeLanguage('Punjabi')">punjabi</li>
+                </ul>
+            </h4>
+            <ul class="navLinks">
+                <li class="navlink">
+                    <a href="#">home</a>
+                </li>
+                <li class="navlink">
+                    <a href="#">about</a>
+                </li>
+                <li class="navlink">
+                    <a href="#">ecosystems</a>
+                </li>
+                <li class="navlink">
+                    <a href="#">resources</a>
+                </li>
+                <li class="navlink">
+                    <a href="#">contact us</a>
+                </li>
+                <li class="navlink user">
+                    <div>
+                        user
+                        <i class="fas fa-plus"></i>
+                        <ul id="userOptions" class="userOptions">
+                            <li>profile</li>
+                            <li>logout</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <header class="header">
+        <div class="widescreen">
+            <div class="logo">
+                <div>
+                    <h1>Agni</h1>
+                    <span>Igniting Innovations</span>
+                </div>
+                <div class="languages setRelative">
+                    <div id="currentLanguageContainer" class="select">
+                        <span id="currentLanguage">English</span>
+                        <i class="fas fa-caret-down dropdown"></i>
+                        <ul id="languageSelect" class="selectList">
+                            <li onclick="changeLanguage('English')">english</li>
+                            <li onclick="changeLanguage('Hindi')">hindi</li>
+                            <li onclick="changeLanguage('Punjabi')">punjabi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li class="navlink">
+                        <a href="#"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li class="navlink textlink">
+                        <a href="#">about</a>
+                    </li>
+                    <li class="navlink textlink">
+                        <a href="#">ecosystems</a>
+                    </li>
+                    <li class="navlink textlink">
+                        <a href="#">resources</a>
+                    </li>
+                    <li class="navlink textlink">
+                        <a href="#">contact us</a>
+                    </li>
+                    <li class="navlink setRelative">
+                        <div class="select">
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-caret-down dropdown"></i>
+                            <ul id="userSelect" class="selectList">
+                                <li>profile</li>
+                                <li>logout</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navlink hamburger" onclick="openSideNav()">
+                        <i class="fas fa-bars"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="banner setRelative">
+        <div class="widescreen">
+            <div class="overlay"></div>
+            <span class="breadcrumbs setRelative">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">patners</a>
+            </span>
+            <div class="content setRelative">
+                <h2>Partners</h2>
+                <span>Interested in becoming a partner?</span>
+                <button class="btn">get involved</button>
+            </div>
+        </div>
+    </div>
+    <section class="content">
+            <div class="featuredContent">
+                <h3>featured videos</h3>
+                <div class="videos container">
+                    <div class="videoPlayer setRelative">
+                        <img src="https://source.unsplash.com/720x250/?building" alt="img">
+                        <div class="controls">
+                            <button class="play setRelative">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    lorem
+                                </h4>
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="videoList">
+                        <li>
+                            <i class="fas fa-caret-up"></i>
+                        </li>
+                        <li class="setRelative">
+                            <div class="overlay"></div>
+                            <img src="https://source.unsplash.com/60x40/?building" alt="#">
+                            <div>
+                                <h4>
+                                    lorem
+                                </h4>
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://source.unsplash.com/60x40/?building" alt="#">
+                            <div>
+                                <h4>
+                                    ipsum
+                                </h4>
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </li>
+                        <li class="setRelative">
+                            <div class="overlay"></div>
+                            <img src="https://source.unsplash.com/60x40/?building" alt="#">
+                            <div>
+                                <h4>
+                                    dolor
+                                </h4>
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-caret-down"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="partners">
+                <h3>our partners</h3>
+                <div class="container">
+                    <ul class="partnersList">
+                        <li><img src="https://source.unsplash.com/210x110/?naruto" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?building" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?camera" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?phone" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?robot" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?car" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?bike" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?cat" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?dog" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?tiger" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?lion" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?forest" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?earth" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?sun" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?moon" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?star" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?tree" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?lamp" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?candle" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?apple" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?cherry" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?television" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?stars" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?nature" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?waterfall" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?food" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?chair" alt="img" href="#"></li>
+                        <li><img src="https://source.unsplash.com/210x110/?sofa" alt="img" href="#"></li>
+                    </ul>
+                    <button class="btn">load more</button>
+                </div>
+            </div>
+            <div class="form">
+                <h3>become a partner</h3>
+                <div class="container">
+                    <div class="formGrpInput">
+                        <label for="fullName">full name</label>
+                        <input type="text" id="fullName">
+                    </div>
+                    <div class="formGrpInput">
+                        <label for="companyName">company name</label>
+                        <input type="text" id="companyName">
+                    </div>
+                    <div class="formGrpInput">
+                        <label for="email">email id</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="formGrpTextArea">
+                        <label for="learnMore">i'd like to learn more about</label>
+                        <div class="textAreaWrapper">
+                            <textarea id="learnMore" rows="10" placeholder="Your Text Goes Here"></textarea>
+                            <span>
+                                <span class="currentCount">0</span>
+                                /100 words
+                            </span>
+                        </div>
+                    </div>
+                    <div class="formGrpTextArea">
+                        <label for="whyInterested">why i'm interested in agnii</label>
+                        <div class="textAreaWrapper">
+                            <textarea id="whyInterested" rows="10" placeholder="Your Text Goes Here"></textarea>
+                            <span>
+                                <span class="currentCount">0</span>
+                                /100 words
+                            </span>
+                        </div>
+                    </div>
+                    <input class="btn" type="submit" value="submit">
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="widescreen">
+            <div class="contact">
+                <div class="phoneConnect">
+                    <span>Call us @ Toll Free Number</span>
+                    <h4>1800-345-1800</h4>
+                    <span>11:00 AM to 5PM, Mon-Fri</span>
+                </div>
+                <div class="socialConnect">
+                    <ul class="socialIcons">
+                        <li>
+                            <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li>
+                            <a class="youtube" href="#"><i class="fab fa-youtube"></i> </a>
+                        </li>
+                    </ul>
+                    <span class="copyright">
+                        2018 AGNI. All Rights Reserved
+                        <a href="#">terms of use</a>|
+                        <a href="#">privacy policy</a>
+                    </span>
+                </div>
+            </div>
+            <div class="apply">
+                <h3>submit your innovation</h3>
+                <button class="btn">apply now</button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
