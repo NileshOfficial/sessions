@@ -6,11 +6,8 @@
 }
 
 .nested1 {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    top: 0;
-    left: 10px;
+    height: 300px;
+    width: 300px;
     background: #ff0000;
 }
 
@@ -18,7 +15,7 @@
     position: absolute;
     height: 100px;
     width: 100px;
-    bottom: 0;
-    right: 30px;
+    bottom: -10px;
+    left: 0;
     background: #00ff00;
 }
