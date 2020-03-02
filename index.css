@@ -33,13 +33,6 @@ h1 {
     margin: 0 auto;
 }
 
-.divider {
-    height: 2rem;
-    width: 20rem;
-    background-color: #fff;
-    margin: 0 auto;
-}
-
 /*header*/
 
 header {
@@ -47,9 +40,19 @@ header {
     text-transform: capitalize;
 }
 
+
 header h1 {
     font-weight: 400;
 }
+
+header::after {
+    content: "___";
+    display: inline-block;
+    margin-top: -12rem;
+    font-size: 10rem;
+    font-weight: 900;
+}
+
 
 /*dateTime*/
 
