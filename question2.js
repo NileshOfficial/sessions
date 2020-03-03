@@ -8,4 +8,4 @@ let handle = setInterval(() => {
     itr++;
     if (itr === arr.length)
         clearInterval(handle);
-}, 1000);
+}, 3000);
