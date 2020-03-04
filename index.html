@@ -250,9 +250,9 @@
                 <div class="formGrpTextArea">
                     <label for="learnMore">i'd like to learn more about</label>
                     <div class="textAreaWrapper">
-                        <textarea id="learnMore" rows="10" placeholder="Your Text Goes Here"></textarea>
+                        <textarea id="learnMore" oninput="setCount('learnMore', 'learnMoreCount')" rows="10" placeholder="Your Text Goes Here"></textarea>
                         <span>
-                            <span class="currentCount">0</span>
+                            <span id="learnMoreCount" class="currentCount">0</span>
                             /100 words
                         </span>
                     </div>
@@ -260,9 +260,9 @@
                 <div class="formGrpTextArea">
                     <label for="whyInterested">why i'm interested in agnii</label>
                     <div class="textAreaWrapper">
-                        <textarea id="whyInterested" rows="10" placeholder="Your Text Goes Here"></textarea>
+                        <textarea id="whyInterested" oninput="setCount('whyInterested', 'whyInterestedCount')" rows="10" placeholder="Your Text Goes Here"></textarea>
                         <span>
-                            <span class="currentCount">0</span>
+                            <span id="whyInterestedCount" class="currentCount">0</span>
                             /100 words
                         </span>
                     </div>
