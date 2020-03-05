@@ -1,18 +1,16 @@
 // Q5. Create a function which returns number of invocations and number of instances of a function.
 
+invocationAndInstanceCounter.instances = 0;
+invocationAndInstanceCounter.invocations = 0;
 function invocationAndInstanceCounter() {
-    if (invocationAndInstanceCounter.prototype.invocations)
-        invocationAndInstanceCounter.prototype.invocations += 1;
-    else invocationAndInstanceCounter.prototype.invocations = 1;
-
-    if (!invocationAndInstanceCounter.prototype.instances)
-        invocationAndInstanceCounter.prototype.instances = 0;
-
-    if (!(this === window))
-        invocationAndInstanceCounter.prototype.instances += 1;
-
+    if (this instanceof invocationAndInstanceCounter) {
+        invocationAndInstanceCounter.instances += 1;
+    } else { 
+        invocationAndInstanceCounter.invocations += 1;
+    }
+    
     console.log(
-        `invocations: ${invocationAndInstanceCounter.prototype.invocations} \t instances: ${invocationAndInstanceCounter.prototype.instances}`
+        `invocations: ${invocationAndInstanceCounter.invocations} \t instances: ${invocationAndInstanceCounter.instances}`
     );
 }
 
