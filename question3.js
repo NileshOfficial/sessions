@@ -1,8 +1,8 @@
 //3. Write a program to implement inheritance upto 3 classes.The Class must  public variables and static functions.
 
 class vehicle {
-    engine = "v4";
-    wheels = 4;
+    // engine = "v4";
+    // wheels = 4;
     constructor(wheels, engine) {
         this.wheels = wheels;
         this.engine = engine;
@@ -10,7 +10,7 @@ class vehicle {
 }
 
 class car extends vehicle{
-    transmission = "manual";
+    // transmission = "manual";
     constructor(wheelCount, engineType, transmission) {
         super(wheelCount, engineType);
         this.transmission = transmission;
@@ -18,7 +18,7 @@ class car extends vehicle{
 }
 
 class nissan extends car {
-    model = "GT";
+    // model = "GT";
     constructor(wheelCount, engineType, transmission, model) {
         super(wheelCount, engineType, transmission);
         this.model = model;
