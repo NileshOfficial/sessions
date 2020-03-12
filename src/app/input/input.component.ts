@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.css']
 })
-export class InputComponent implements OnInit {
-
+export class InputComponent {
+  username:string;
   constructor() { }
 
-  ngOnInit(): void {
+  oninput(event) {
+    this.username = (<HTMLInputElement>event.target).value;
   }
 
 }
