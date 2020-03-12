@@ -13,4 +13,7 @@ export class InputComponent {
     this.username = (<HTMLInputElement>event.target).value;
   }
 
+  onclear(event) {
+    this.username = "";
+  }
 }
