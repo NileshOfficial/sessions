@@ -4,5 +4,5 @@
     (input)="oninput($event)"
     [(ngModel)]="username"
 >
-<button class="btn" (click)="onclear($event)">clear</button>
+<button class="btn" (click)="onclear()" [disabled]="clearDisabled">clear</button>
 <p>username: {{username}}</p>

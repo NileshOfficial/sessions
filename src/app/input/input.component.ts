@@ -7,13 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent {
   username:string;
+  clearDisabled = true;
   constructor() { }
 
   oninput(event) {
     this.username = (<HTMLInputElement>event.target).value;
+    if(this.username === "")
+      this.clearDisabled = true;
+    else this.clearDisabled = false;
   }
 
-  onclear(event) {
+  onclear() {
     this.username = "";
+    this.clearDisabled = true;
   }
 }
