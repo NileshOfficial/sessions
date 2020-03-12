@@ -1,1 +1,6 @@
-<input type="text" placeholder="Username" (input)="oninput()">
+<input type="text" 
+    placeholder="Username" 
+    (input)="oninput($event)"
+    [(ngModel)]="username"
+>
+<p>username: {{username}}</p>
