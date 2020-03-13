@@ -1,0 +1,25 @@
+{
+  "name": "sessions",
+  "version": "1.0.0",
+  "description": "branch name is the session topic.",
+  "main": "question1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel wrapper -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NileshOfficial/sessions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NileshOfficial/sessions/issues"
+  },
+  "homepage": "https://github.com/NileshOfficial/sessions#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7"
+  }
+}
